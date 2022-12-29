@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/speedometer.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Social Media Dashboard-Frontend</title>
+  </head>
+  <body>
+    <div class="nav-bar">
+      <div class="logo-gr">
+        <img class="logo" src="./images/new-logo.png" alt="ghg">
+      </div>
+      <div class="slogan">
+        <p class="slo-a">Social Media Dashboard</p>
+        <p class="slo-b">All Things at one Place</p>
+      </div>
+      <div class="nav-list">
+        <ul class="nav-ele">
+          <li class="lists">Home</li>
+          <li class="lists"><a href="About-Us.html" style="text-decoration: none;">About Us</a></li>
+          <li class="lists">Contact</li>
+          <li class="lists" id="show-login">Login</li>
+        </ul>
+      </div>
+      <div class="toggle__wrapper">
+        <p class="toggle__label">Dark Mode</p>
+        <input type="checkbox" id="toggle" class="toggle__input" />
+        <label for="toggle" class="toggle__switch"></label>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header__content">
+        <!-- <div>
+          <h1 class="heading--main"><img src="/images/logofinal.png" alt="" height="100px" width="200px"></h1>
+          <p class="heading--sub"></p> -->
+        <!-- </div> -->
+        
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="card-grid card-grid--top">
+        <div class="card card--lg card--facebook">
+          <div class="card__handle">
+            <img
+              class="card__handle-icon"
+              src="./images/icon-facebook.svg"
+              alt=""
+            /><span>@Hackathon</span>
+          </div>
+          <div class="card__total"><p class="num" data-val="986">000</p></div>
+          <div class="card__followers">Followers</div>
+          <div class="card__latest card__latest--up">
+            <img
+              class="card__trend-icon"
+              src="./images/icon-up.svg"
+              alt="Up icon"
+            /><span>12 Today</span>
+          </div>
+        </div>
+
+        <div class="card card--lg card--twitter">
+          <div class="card__handle">
+            <img
+              class="card__handle-icon"
+              src="./images/icon-twitter.svg"
+              alt=""
+            /><span>@Hackathon</span>
+          </div>
+          <div class="card__total"><p class="num" data-val="587">000</p></div>
+          <div class="card__followers">Followers</div>
+          <div class="card__latest card__latest--up">
+            <img
+              class="card__trend-icon"
+              src="./images/icon-up.svg"
+              alt="Up icon"
+            /><span>99 Today</span>
+          </div>
+        </div>
+
+        <div class="card card--lg card--instagram">
+          <div class="card__handle">
+            <img
+              class="card__handle-icon"
+              src="./images/icon-instagram.svg"
+              alt=""
+            />
+            <span>@Hackathon</span>
+          </div>
+          <div class="card__total"><p class="num" data-val="1289">000</p></div>
+          <div class="card__followers">Followers</div>
+          <div class="card__latest card__latest--up">
+            <img
+              class="card__trend-icon"
+              src="./images/icon-up.svg"
+              alt="Up icon"
+            /><span>1099 Today</span>
+          </div>
+        </div>
+
+        <div class="card card--lg card--youtube">
+          <div class="card__handle">
+            <img
+              class="card__handle-icon"
+              src="./images/icon-youtube.svg"
+              alt=""
+            />
+            <span>Hackathon</span>
+          </div>
+          <div class="card__total"><p class="num" data-val="1590">000</p></div>
+          <div class="card__followers">Subscribers</div>
+          <div class="card__latest card__latest--down">
+            <img
+              class="card__trend-icon"
+              src="./images/icon-down.svg"
+              alt="Down icon"
+            /><span>144 Today</span>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="heading--secondary">Overview - Today</h2>
+
+      <div class="card-grid card-grid--bottom">
+        <div class="card card--sm">
+          <span class="card__daily-result">Page Views</span>
+          <span class="card__daily-icon"
+            ><img src="./images/icon-facebook.svg" alt="Facebook icon"
+          /></span>
+          <span class="card__daily-total">87</span>
+          <div class="card__daily-change card__daily-change--up">
+            <img
+              class="card__trend-icon"
+              src="./images/icon-up.svg"
+              alt="Up icon"
+            />
+            <span>3%</span>
+          </div>
+        </div>
+
+        <div class="card card--sm">
+          <span class="card__daily-result">Likes</span>
+          <span class="card__daily-icon"
+            ><img src="./images/icon-facebook.svg" alt="Facebook icon"
+          /></span>
+          <span class="card__daily-total">52</span>
+          <div class="card__daily-change card__daily-change--down">
+            <img
+              class="card__trend-icon"
+              src="./images/icon-down.svg"
+              alt="Down icon"
+            />
+            <span>2%</span>
+          </div>
+        </div>
+
+        <div class="card card--sm">
+          <span class="card__daily-result">Likes</span>
+          <span class="card__daily-icon"
+            ><img src="./images/icon-instagram.svg" alt="Instagram icon"
+          /></span>
+          <span class="card__daily-total">5462</span>
+          <div class="card__daily-change card__daily-change--up">
+            <img
+              class="card__trend-icon"
+              src="./images/icon-up.svg"
+              alt="Up icon"
+            />
+            <span>2257%</span>
+          </div>
+        </div>
+
+        <div class="card card--sm">
+          <span class="card__daily-result">Profile Views</span>
+          <span class="card__daily-icon"
+            ><img src="./images/icon-instagram.svg" alt="Instagram icon"
+          /></span>
+          <span class="card__daily-total">52200</span>
+          <div class="card__daily-change card__daily-change--up">
+            <img
+              class="card__trend-icon"
+              src="./images/icon-up.svg"
+              alt="Up icon"
+            />
+            <span>1375%</span>
+          </div>
+        </div>
+
+        <div class="card card--sm">
+          <span class="card__daily-result">Retweets</span>
+          <span class="card__daily-icon"
+            ><img src="./images/icon-twitter.svg" alt="Twitter icon"
+          /></span>
+          <span class="card__daily-total">117</span>
+          <div class="card__daily-change card__daily-change--up">
+            <img
+              class="card__trend-icon"
+              src="./images/icon-up.svg"
+              alt="Up icon"
+            />
+            <span>303%</span>
+          </div>
+        </div>
+
+        <div class="card card--sm">
+          <span class="card__daily-result">Likes</span>
+          <span class="card__daily-icon"
+            ><img src="./images/icon-twitter.svg" alt="Twitter icon"
+          /></span>
+          <span class="card__daily-total">507</span>
+          <div class="card__daily-change card__daily-change--up">
+            <img
+              class="card__trend-icon"
+              src="./images/icon-up.svg"
+              alt="Up icon"
+            />
+            <span>553%</span>
+          </div>
+        </div>
+
+        <div class="card card--sm">
+          <span class="card__daily-result">Likes</span>
+          <span class="card__daily-icon"
+            ><img src="./images/icon-youtube.svg" alt="YouTube icon"
+          /></span>
+          <span class="card__daily-total">107</span>
+          <div class="card__daily-change card__daily-change--down">
+            <img
+              class="card__trend-icon"
+              src="./images/icon-down.svg"
+              alt="Down icon"
+            />
+            <span>19%</span>
+          </div>
+        </div>
+
+        <div class="card card--sm">
+          <span class="card__daily-result">Total Views</span>
+          <span class="card__daily-icon"
+            ><img src="./images/icon-youtube.svg" alt="YouTube icon"
+          /></span>
+          <span class="card__daily-total">1407</span>
+          <div class="card__daily-change card__daily-change--down">
+            <img
+              class="card__trend-icon"
+              src="./images/icon-down.svg"
+              alt="Down icon"
+            />
+            <span>12%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup">
+      <div class="close-btn">&times;</div>
+      <div class="form">
+        <h2>Login</h2>
+        <div class="form-element">
+          <label for="email" class="extra-add">Email</label>
+          <input type="text" id="email" placeholder="Enter email">
+        </div>
+        <div class="form-element">
+          <label for="email" class="extra-add">Username</label>
+          <input type="text" id="email" placeholder="Enter Username">
+        </div>
+        <div class="form-element">
+          <label for="password" class="extra-add">password</label>
+          <input type="password" id="password" placeholder="enter password">
+        </div>
+        <div class="form-element">
+          <input type="checkbox" id="remember-me">
+          <label for="remember-me" class="extra-add-ano">remember-me</label>
+        </div>
+        <div class="form-element">
+          <a href=""><button>Sign in</button></a>
+        </div>
+        <div class="form-element">
+          <a href="#" class="fopass">Forgot password?</a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <p class="copyright">&#169; Copyright by "MRUH STUDENTS"</p>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>
